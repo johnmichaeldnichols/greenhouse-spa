@@ -1,0 +1,28 @@
+.card { 
+  flex: 1 0 27%;  
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .card {    
+    flex: 1 0 92%;
+    max-width: 100%;
+  }
+}

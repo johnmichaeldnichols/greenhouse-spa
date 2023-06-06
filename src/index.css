@@ -1,10 +1,36 @@
+:root {
+  /* light green and cream color scheme 
+    #99ee99   green 
+    #c7f6b6   
+    #e2fab5
+    #fffcd1
+    #fff9c2   cream 
+  */
+
+  /* pink and green color scheme 
+  #fac7c1 light pink
+  #cfdebd light green
+  #8f9b87 grey green
+  #fafbed cream 
+   */
+
+  --primary-color: #99ee99;
+  --secondary-color: #FDD0FF;
+  --accent-color: #FFFDD0;
+  --background-color: #fffdf3;
+  --lighter-background-color: #fffdf7;
+  --text-color: #333333;
+
+}
+
 body {
   margin: 0;
+  background-color: var(--lighter-background-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 code {

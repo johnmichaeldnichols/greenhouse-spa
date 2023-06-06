@@ -1,0 +1,11 @@
+.buttonstyle {
+    flex: 1 0 100%;
+    background-color: var(--secondary-color);
+    color: var(--lighter-background-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;   
+    border-radius: 10rem; 
+}
