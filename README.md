@@ -1,5 +1,3 @@
-<a href="https://www.freepik.com/free-vector/geometric-frame-with-leaves-vector_3463058.htm#query=floral&position=27&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<a href="https://www.freepik.com/free-vector/geometric-frame-with-leaves-vector_3463058.htm#query=floral&position=27&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
