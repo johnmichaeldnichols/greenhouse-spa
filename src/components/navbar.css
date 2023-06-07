@@ -8,7 +8,7 @@
   background-color: var(--background-color);
   color: var(--primary-color);
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  justify-content: space-between;
+  justify-content: space-between;  
   /* border: 3px solid orange; */
 }
 
@@ -89,6 +89,10 @@
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 600px) {
   .navigation-menu ul {
     /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
@@ -102,8 +106,7 @@
     height: calc(100vh - 77px);
     background-color: white;
     border-top: 1px solid black;
-    display: none;
-
+    display: none;        
   }
 
   .custom-hamburger {
@@ -131,5 +134,9 @@
   .navigation-menu.expanded ul {
     display: block;
     color: var(--primary-color);
+  }
+
+  .navigation-menu li a:hover::after {
+    animation: none;
   }
 }

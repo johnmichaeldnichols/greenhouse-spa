@@ -7,6 +7,16 @@ function Navbar() {
 
   const [ isNavExpanded, setIsNavExpanded] = useState(false);
 
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+    document.body.classList.toggle('no-scroll');
+  };
+
+  const closeNav = () => {
+    setIsNavExpanded(false);    
+    document.body.classList.remove('no-scroll');
+  };
+
   return (
     <nav className="navigation">
 
@@ -19,8 +29,9 @@ function Navbar() {
           rounded                 
           toggled={isNavExpanded} 
           toggle={setIsNavExpanded}
+          onToggle={toggleNav}
         />   
-      </div>           
+      </div>
 
       <div className={ isNavExpanded ? "navigation-menu expanded" : "navigation-menu" }>
         <ul>          
