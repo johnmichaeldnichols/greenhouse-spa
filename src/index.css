@@ -1,26 +1,21 @@
 :root {
-  /* light green and cream color scheme 
-    #99ee99   green 
-    #c7f6b6   
-    #e2fab5
-    #fffcd1
-    #fff9c2   cream 
-  */
-
-  /* pink and green color scheme 
-  #fac7c1 light pink
-  #cfdebd light green
-  #8f9b87 grey green
-  #fafbed cream 
-   */
-
-  --primary-color: #99ee99;
-  --secondary-color: #FDD0FF;
+  --primary-color: #3f7661; 
+  --primary-dark-accent: #0c3628;
+  --secondary-color: #d0c6eb;
   --accent-color: #FFFDD0;
   --background-color: #fffdf3;
   --lighter-background-color: #fffdf7;
   --text-color: #333333;
 
+  --cream: #fffdd0; /*cream*/
+  --light-cream: #fff7ea; /*light-cream*/
+  --soft-purple: #d0c6eb; /*soft purple*/
+  --cream-purple: #ece3f8; /*cream-purple*/
+  --soft-pink: #febdb9; /*soft-pink*/
+  --cream-pink: #fedfda; /*cream-pink*/
+  --soft-green: #3f7661; /*soft-green*/
+  --green: #1f4b3c; /*green*/
+  --dark-green: #0c3628; /*dark-green*/
 }
 
 body {

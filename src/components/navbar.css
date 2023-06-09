@@ -3,13 +3,11 @@
   width: 100%;
   display: flex;
   align-items: center;
-  /* position: relative; */
   padding: 0.5rem 0rem;
   background-color: var(--background-color);
   color: var(--primary-color);
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   justify-content: space-between;  
-  /* border: 3px solid orange; */
 }
 
 .greenhousespa {
@@ -25,8 +23,7 @@
 
   justify-content: center;
   align-items: center;
-  display: flex;
-  /* border: 3px solid orange; */
+  display: flex;  
 }
 
 .custom-hamburger {
@@ -34,28 +31,23 @@
   margin-right: 1rem;
   margin-left: auto;
   order: 2;
-  display: none;
-  /* border: 3px solid orange; */
+  display: none;  
 }
 
 .navigation-menu {
   margin-left: auto;
-  /* border: 3px solid orange; */
 }
 
-/* // navbar.css */
 .navigation-menu ul {
   display: flex;
   padding: 0;
 }
 
-.navigation-menu li {
-  /* // removes default disc bullet for li tags and applies margin to left & right side */
+.navigation-menu li {  
   list-style-type: none;
   margin: 0 1rem;
 }
-.navigation-menu li a {
-  /* // increases the surface area of the anchor tag to span more than just the anchor text */
+.navigation-menu li a {  
   text-decoration: none;
   display: block;
   width: 100%;
@@ -94,41 +86,39 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navigation-menu ul {
-    /* // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+  .navigation-menu ul {    
     position: absolute;
     top: 60px;
-    left: 0;
-    /* // stacks the li tags vertically  */
-    flex-direction: column;
-   /* // makes menu span full height and width */
+    left: 0;    
+    flex-direction: column;   
     width: 100%;
     height: calc(100vh - 77px);
-    background-color: white;
-    border-top: 1px solid black;
+    background-color: var(--light-cream);  
+    border-top: 1px solid var(--primary-color);
     display: none;        
   }
 
   .custom-hamburger {
-    display: block;
-    /* border: 3px solid orange; */
+    display: block;    
   }
 
-  .navigation-menu li {
-    /* // centers link text and strips off margin */
+  .navigation-menu li {    
     text-align: center;
     margin: 0;
   }
   
   .navigation-menu li a {
-    color: black;
-    /* // increases the surface area of the anchor tag to span the full width of the menu */
+    color: var(--primary-color);    
     width: 100%;
     padding: 1.5rem 0;
   }
 
+  .navigation-menu li a:hover {
+    color: var(--lighter-background-color);
+  }
+
   .navigation-menu li:hover {
-    background-color: var(--primary-color);    
+    background-color: var(--primary-color);        
   }
 
   .navigation-menu.expanded ul {

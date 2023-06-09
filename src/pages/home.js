@@ -1,31 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import BookButton from '../components/bookbutton';
-import Card from '../components/card';
-import cardsData from '../data/services.json';
-import './home.css'
+import React, { useState } from 'react';
+import Gallery from '../components/gallery';
  
 const Home = () => {
 
-    const [cards, setCards] = useState([]);
-
-    useEffect(() => {
-        setCards(cardsData);
-    }, []);
+    const info = {
+        name: "My Salong",
+        address: "123 Main Street, City, State ZIP",
+        description: "This is the best salong in the world!",
+    };
 
     return (
         <>
-            <BookButton/>
-            <div className='service-cards'>
-                {cards.map((card, index) => (
-                    <Card
-                        key={index}
-                        image={card.image}
-                        title={card.title}
-                        description={card.description}
-                    />
-                ))}       
-            </div>
-            
+            <Gallery/>
+            <h2>{info.name}</h2>;
+            <p>{info.address}</p>;
+            <p>{info.description}</p>;
         </>
     );
 };

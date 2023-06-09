@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 <a href="https://www.freepik.com/free-vector/geometric-frame-with-leaves-vector_3463058.htm#query=floral&position=27&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
+
+Image by <a href="https://pixabay.com/users/nosheep-204378/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1885546">Charles Thompson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1885546">Pixabay</a>

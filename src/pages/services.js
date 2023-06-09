@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import BookButton from '../components/bookbutton';
+import Card from '../components/card';
+import cardsData from '../data/services.json';
+import './services.css'
+import padicure from '../images/services/pedicure.jpg'
+import waxing from '../images/services/waxing.jpg';
  
 const Services = () => {
+
+    const [cards, setCards] = useState([]);
+
+    useEffect(() => {
+        setCards(cardsData);
+    }, []);
+
     return (
-        <h1>You can write your Services!</h1>
+        <>
+            <div className='service-cards'>
+                {cards.map((card, index) => (
+                    <Card
+                        key={index}
+                        image={card.image}
+                        title={card.title}
+                        description={card.description}
+                    />
+                ))}       
+            </div>
+            
+        </>
     );
 };
  
