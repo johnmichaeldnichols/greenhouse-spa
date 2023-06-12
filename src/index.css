@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3f7661; 
   --primary-dark-accent: #0c3628;
-  --secondary-color: #d0c6eb;
+  --secondary-color: #d0c6eb; /*baa6ef  darker option for readability?*/
   --accent-color: #FFFDD0;
   --background-color: #fffdf3;
   --lighter-background-color: #fffdf7;
@@ -9,6 +9,7 @@
 
   --cream: #fffdd0; /*cream*/
   --light-cream: #fff7ea; /*light-cream*/
+  --purple: #baa6ef;
   --soft-purple: #d0c6eb; /*soft purple*/
   --cream-purple: #ece3f8; /*cream-purple*/
   --soft-pink: #febdb9; /*soft-pink*/

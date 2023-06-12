@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Gallery from '../components/gallery';
- 
-const Home = () => {
+import './about.css';
+
+const About = () => {
 
     const info = {
         name: "My Salong",
@@ -19,4 +20,4 @@ const Home = () => {
     );
 };
  
-export default Home;
+export default About;

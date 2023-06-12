@@ -19,7 +19,7 @@ const Footer = () => {
           <h5>Sunday</h5>
           <p>Closed</p>
         </div>
-        <div className="footer-column raised-column">
+        <div className="footer-column socials">
           <h3>Socials</h3>
           <p>Follow us on:</p>
           <ul id='social-links'>
@@ -32,7 +32,7 @@ const Footer = () => {
             <p><FaEnvelope/> <span>greenhousewr</span></p>
           </div>
         </div>
-        <div className="footer-column">
+        <div className="footer-column location">
           <h3>Location</h3>
           <p>123 Main Street</p>
           <p>City, State 12345</p>

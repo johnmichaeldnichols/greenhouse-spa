@@ -1,64 +1,62 @@
 .navigation {
-  height: 60px;
+  height: 4rem;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;  
   padding: 0.5rem 0rem;
   background-color: var(--background-color);
   color: var(--primary-color);
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-  justify-content: space-between;  
+  position: sticky;
+  top: 0;
 }
 
-.greenhousespa {
-  text-decoration: none;
-  color: var(--lighter-background-color);
-  background-color: var(--primary-color);  
+/* add this later */
+/* .navigation.sticking {
+  padding: 0;
+} */
 
-  width: 12rem;
-  height: 2rem;
-  border-radius: 30px;
-  font-size: 1.3rem;
-  margin-left: 1rem;
-
-  justify-content: center;
-  align-items: center;
-  display: flex;  
+.greenhousespa img {
+  max-width: 100%;
+  max-height: 100%;    
+  /* below changes black logo to primary color using this tool: https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(40%) sepia(35%) saturate(403%) hue-rotate(105deg) brightness(94%) contrast(99%);  
 }
 
-.custom-hamburger {
-  color: var(--primary-color);
-  margin-right: 1rem;
-  margin-left: auto;
-  order: 2;
-  display: none;  
+.greenhousespa-desktop img {  
+  height: 100%;  
+  width: 10rem;
 }
 
-.navigation-menu {
-  margin-left: auto;
+.greenhousespa-mobile {
+  display: none;
 }
 
 .navigation-menu ul {
   display: flex;
   padding: 0;
+  gap: 4rem;
 }
 
 .navigation-menu li {  
   list-style-type: none;
-  margin: 0 1rem;
-}
-.navigation-menu li a {  
-  text-decoration: none;
-  display: block;
-  width: 100%;
 }
 
-.navigation-menu li a:hover {
+.hoverable {  
+  text-decoration: none;
+  display: block;
+  width: 100%;  
+  font-size: x-large;  
+  margin-top: 1rem;  
+}
+
+.hoverable:hover {
   position: relative;
   color: var(--primary-color);
 }
 
-.navigation-menu li a:hover::after {
+.hoverable:hover::after {
   content: "";
   min-height: 1rem;
   background-image: url(../images/pink-flower.png);
@@ -66,10 +64,24 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  animation: fadeIn 0.5s linear forwards;
+  animation: fadeIn .3s linear forwards;
   left: 0.1rem;
   bottom: -1rem;
-  transform: rotate(27deg);
+  transform: rotate(20deg);
+}
+
+.hoverable:hover::before {
+  content: "";
+  min-height: 1rem;
+  background-image: url(../images/pink-flower.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  animation: fadeIn .3s linear forwards;
+  right: 0.1rem;
+  top: -.5rem;
+  transform: rotate(200deg);
 }
 
 @keyframes fadeIn {
@@ -85,10 +97,22 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 600px) {
+.custom-hamburger {
+  color: var(--primary-color);
+  margin-right: 1.5rem;
+  margin-left: auto;
+  order: 2;
+  display: none;  
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    z-index: 3;
+  }
+
   .navigation-menu ul {    
     position: absolute;
-    top: 60px;
+    top: 4rem;
     left: 0;    
     flex-direction: column;   
     width: 100%;
@@ -98,11 +122,28 @@
     display: none;        
   }
 
+  .greenhousespa-desktop {
+    display: none;
+  }
+  
+  .greenhousespa-mobile {
+    display: flex;        
+    margin-left: 1.5rem;
+    height: 100%;
+    justify-content:left;
+    align-items:baseline;    
+  }
+
+  /* .greenhousespa img{
+    max-width: 100%;
+    max-height: 100%;
+  } */
+
   .custom-hamburger {
     display: block;    
   }
 
-  .navigation-menu li {    
+  .navigation-menu li {        
     text-align: center;
     margin: 0;
   }
@@ -122,11 +163,13 @@
   }
 
   .navigation-menu.expanded ul {
+    z-index: 2;
     display: block;
     color: var(--primary-color);
   }
 
-  .navigation-menu li a:hover::after {
+  .navigation-menu li a:hover::after,
+  .navigation-menu li a:hover::before {
     animation: none;
   }
 }
