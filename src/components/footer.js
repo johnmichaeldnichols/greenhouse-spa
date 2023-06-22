@@ -5,11 +5,14 @@ import {FaCalendar, FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } fr
 const Footer = () => {
   return (
     <footer className="footer">
+      
       <div className="above-column">
         <div className='gradient-underlay'></div>
         <span>Call <i>123-456-7890</i> with any questions.</span>
       </div>
+      
       <div className="footer-content">
+        
         <div className="footer-column hours">
           <h3>Hours</h3>
           <h5>Monday - Friday</h5>
@@ -19,6 +22,7 @@ const Footer = () => {
           <h5>Sunday</h5>
           <p>Closed</p>
         </div>
+        
         <div className="footer-column socials">
           <h3>Socials</h3>
           <p>Follow us on:</p>
@@ -32,6 +36,7 @@ const Footer = () => {
             <p><FaEnvelope/> <span>greenhousewr</span></p>
           </div>
         </div>
+        
         <div className="footer-column location">
           <h3>Location</h3>
           <p>123 Main Street</p>
@@ -40,7 +45,9 @@ const Footer = () => {
           <p><FaPhone/> 123-456-7890</p>
           <p><FaCalendar/> Book Appointment</p>
         </div>
+
       </div>
+      
     </footer>
   );
 };

@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content  {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-green);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
