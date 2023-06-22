@@ -9,19 +9,27 @@ import Landing from "./pages/landing";
 import Footer from "./components/footer";
 
 const App = () => {
+
+  const pageStyles = {
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+  }
+
   return (
-    <>
+    <div style={pageStyles}>
       <Navbar/>
-      <Routes>
-        <Route path='/' element={<Landing />} /> 
-        <Route path='/' element={<Landing />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/store' element={<Store />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path='/' element={<Landing />} />           
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/store' element={<Store />} />
+        </Routes>
+      </main>      
       <Footer/>
-    </>
+    </div>
   )
 }
 

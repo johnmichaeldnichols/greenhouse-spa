@@ -1,7 +1,6 @@
 import React from 'react';
 import BookButton from '../components/bookbutton';
 import './landing.css';
-import landingImage from '../images/splash-image.jpg';
 import { LuLeaf } from "react-icons/lu";
 
  
