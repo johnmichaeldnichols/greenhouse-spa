@@ -1,7 +1,14 @@
-.service-cards {
+.service-cards-container {
+    width: 75%;
     display: flex;        
     flex-wrap: wrap;    
     gap: 1.5rem;
     padding: 1rem;
+    margin: 2rem auto;
 }
 
+@media (max-width: 768px) { 
+    .service-cards-container:last-child{
+        margin-bottom: 3rem;
+    }
+}

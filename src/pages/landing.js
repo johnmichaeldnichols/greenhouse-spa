@@ -7,7 +7,7 @@ import { LuLeaf } from "react-icons/lu";
 const Landing = () => {
     return (
         <div className='landing-page'>     
-            <h1 id='landing-title'>Welcome to Greenhouse Spa of Warner Robins<LuLeaf/></h1>
+            <h1 id='landing-title'>Welcome to Green House Spa of Warner Robins<LuLeaf/></h1>
             <div className='booking-button'>
                 <BookButton/>
             </div>                                          

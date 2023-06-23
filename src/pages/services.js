@@ -16,7 +16,7 @@ const Services = () => {
 
     return (
         <>
-            <div className='service-cards'>
+            <div className='service-cards-container'>
                 {cards.map((card, index) => (
                     <Card
                         key={index}

@@ -1,28 +1,38 @@
 .card { 
   flex: 1 0 27%;  
-  border: 1px solid #ffffff;
+  /* border: 1px solid black; */
   border-radius: 4px;
+  gap: 0rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-image {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   border-radius: 25px;
-  margin-bottom: 8px;
 }
 
 .card-title {
   font-size: 20px;
   margin-bottom: 8px;
+  padding: 0 1rem;
 }
 
 .card-description {
   font-size: 14px;
+  padding: 0 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .card {    
     flex: 1 0 92%;
-    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1368px) {
+  .card {
+    flex: 1 0 45%;
   }
 }

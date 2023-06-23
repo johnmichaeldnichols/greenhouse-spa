@@ -46,6 +46,8 @@
 
 .hoverable {  
   text-decoration: none;
+  color: var(--primary-color);
+  /* color: var(--dark-green); */
   display: block;
   width: 100%;  
   font-size: x-large;  
@@ -54,7 +56,8 @@
 
 .hoverable:hover {
   position: relative;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: var(--dark-green);
 }
 
 .hoverable:hover::after {
