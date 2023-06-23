@@ -33,6 +33,12 @@
     height: 100%;
 }
 
+
+.footer-content a {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
 .footer-column {
     flex: 1 0 33%;
     text-align: center;     
@@ -71,11 +77,6 @@
 
 .location hr {
     width: 50%;
-}
-
-.location a {
-    text-decoration: none;
-    color: black;
 }
 
 #social-links {

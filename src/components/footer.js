@@ -28,23 +28,29 @@ const Footer = () => {
           <h3>Socials</h3>
           <p>Follow us on:</p>
           <ul id='social-links'>
-            <li><FaFacebook/></li>
-            <li><FaInstagram/></li>
-            <li><FaTwitter/></li>
+            <li><a href={config.facebook}><FaFacebook/></a></li>
+            <li><a href={config.instagram}><FaInstagram/></a></li>
+            {/* <li><FaTwitter/></li> */}
           </ul>
           <div id='business-email'>
             <p>Business inquiries:</p>
-            <p><FaEnvelope/> <span>greenhousewr</span></p>
+            <a href={`mailto:${config.email}`}><p><FaEnvelope/><span>greenhousespawr</span></p></a>
           </div>
         </div>
         
         <div className="footer-column location">
           <h3>Location</h3>
-          <p>{config.location}</p>
-          <p>{config.address}</p>
+          <a href={config.mapsUrl}>
+            <p>{config.location}</p>
+            <p>{config.address}</p>
+          </a>
           <hr/>
           <a href={`tel://${config.phoneNumber}`}><FaPhone/> {config.phoneNumber}</a>
-          <p><FaCalendar/> Book Appointment</p>
+          <a href="https://www.fresha.com/book-now/gg-nails-xls3yz6o/services?lid=286077&eid=848007&pId=266977"
+            target='_blank'
+            rel='noopener noreferrer'>
+            <p><FaCalendar/> Book Appointment</p>
+          </a>
         </div>
 
       </div>
