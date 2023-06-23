@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import config from '../data/config';
 import {FaCalendar, FaFacebook, FaInstagram, FaTwitter, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
       
       <div className="above-column">
         <div className='gradient-underlay'></div>
-        <span>Call <i>123-456-7890</i> with any questions.</span>
+        <span>Call <i>{config.phoneNumber}</i> with any questions.</span>
       </div>
       
       <div className="footer-content">
@@ -16,11 +17,11 @@ const Footer = () => {
         <div className="footer-column hours">
           <h3>Hours</h3>
           <h5>Monday - Friday</h5>
-          <p>9am - 6pm</p>
+          <p>{config.hours.weedays}</p>
           <h5>Saturday</h5>
-          <p>10am - 4pm</p>
+          <p>{config.hours.saturday}</p>
           <h5>Sunday</h5>
-          <p>Closed</p>
+          <p>{config.hours.sunday}</p>
         </div>
         
         <div className="footer-column socials">
@@ -39,10 +40,10 @@ const Footer = () => {
         
         <div className="footer-column location">
           <h3>Location</h3>
-          <p>123 Main Street</p>
-          <p>City, State 12345</p>
+          <p>{config.location}</p>
+          <p>{config.address}</p>
           <hr/>
-          <p><FaPhone/> 123-456-7890</p>
+          <a href={`tel://${config.phoneNumber}`}><FaPhone/> {config.phoneNumber}</a>
           <p><FaCalendar/> Book Appointment</p>
         </div>
 

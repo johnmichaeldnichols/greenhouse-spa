@@ -66,10 +66,16 @@
 
 .location {
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .location hr {
     width: 50%;
+}
+
+.location a {
+    text-decoration: none;
+    color: black;
 }
 
 #social-links {
