@@ -70,6 +70,18 @@
     /* margin-top: -1rem; */
 }
 
+#social-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-right: 2rem;    
+    gap: 1rem;
+}
+
+#business-email {
+    margin-bottom: 2rem;
+}
+
 .location {
     color: var(--text-color);
     text-decoration: none;
@@ -77,28 +89,6 @@
 
 .location hr {
     width: 50%;
-}
-
-#social-links {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin-right: 2rem;
-    gap: 1rem;
-}
-
-#business-email {
-    display: inline-block;
-}
-
-#business-email p{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-#business-email p svg {
-    margin-top: .3rem;
 }
 
 @media screen and (max-width: 768px) {

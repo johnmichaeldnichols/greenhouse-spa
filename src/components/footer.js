@@ -34,7 +34,7 @@ const Footer = () => {
           </ul>
           <div id='business-email'>
             <p>Business inquiries:</p>
-            <a href={`mailto:${config.email}`}><p><FaEnvelope/><span>greenhousespawr</span></p></a>
+            <a href={`mailto:${config.email}`}><FaEnvelope/></a>
           </div>
         </div>
         

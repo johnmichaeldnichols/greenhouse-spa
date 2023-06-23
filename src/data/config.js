@@ -9,7 +9,7 @@ const config = {
         saturday: "10am - 4pm",
         sunday: "Closed",
     },
-    instagram: "",
+    instagram: "https://instagram.com/greenhousespawr",
     facebook: "",
 }
 
