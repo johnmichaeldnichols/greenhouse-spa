@@ -3,8 +3,6 @@ import BookButton from '../components/bookbutton';
 import Card from '../components/card';
 import cardsData from '../data/services.json';
 import './services.css'
-import padicure from '../images/services/pedicure.jpg'
-import waxing from '../images/services/waxing.jpg';
  
 const Services = () => {
 
