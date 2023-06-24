@@ -8,8 +8,8 @@ const Store = () => {
     }
 
     const backdropImage = {          
-        marginTop: '-3rem',                 
-        height: '100vh',     
+        // marginTop: '-3rem',                 
+        // height: '100vh',     
         display: 'block',
         objectFit: 'cover',
         width: '100%',        
@@ -18,7 +18,7 @@ const Store = () => {
 
     const storeContentOverlay = {      
         inset: 0,
-        position: 'absolute',      
+        position: 'relative',      
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -26,7 +26,8 @@ const Store = () => {
         gap: '2rem',        
         color: 'var(--dark-green)',                
         maxWidth: '33%',
-        margin: '0 auto',   
+        marginTop: '-47rem',
+        margin: '2rem auto',   
         textAlign: 'center',     
     }
 
