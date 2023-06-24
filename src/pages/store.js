@@ -1,34 +1,21 @@
 import React from 'react';
 import backSplashImage from '../images/store-wrapper.jpg';
+import './store.css';
  
 const Store = () => {
 
-    const storeContainer = {
-        position: 'relative',
-    }
-
-    const backdropImage = {          
-        // marginTop: '-3rem',                 
-        // height: '100vh',     
-        display: 'block',
-        objectFit: 'cover',
-        width: '100%',        
-        zIndex: '-1',
-    }
-
-    const storeContentOverlay = {      
-        inset: 0,
-        position: 'relative',      
+    const storeContentOverlay = {          
         display: 'flex',
         flexDirection: 'column',
+
+        margin: '0 1rem',
+
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '2rem',        
-        color: 'var(--dark-green)',                
-        maxWidth: '33%',
-        marginTop: '-47rem',
-        margin: '2rem auto',   
         textAlign: 'center',     
+
+        gap: '2rem',        
+        color: 'var(--dark-green)',                        
     }
 
     const header = {
@@ -36,8 +23,8 @@ const Store = () => {
     }
 
     return (        
-        <div style={storeContainer}>
-            <img style={backdropImage} src={backSplashImage}/>
+        <div className='store' >
+            {/* <img style={backdropImage} src={backSplashImage}/> */}
             <div style={storeContentOverlay}>
                 <h1 style={header}>Greenhouse Spa Online Store is still under construction. </h1>
                 <p>We at Green House Spa are in the planning stage of setting up a store with custom Green House Spa clothing, health products, and general cute things!</p>
