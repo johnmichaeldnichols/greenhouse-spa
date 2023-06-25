@@ -9,7 +9,7 @@ const Footer = () => {
       
       <div className="above-column">
         <div className='gradient-underlay'></div>
-        <span>Call <i>{config.phoneNumber}</i> with any questions.</span>
+        {/* <span>Call <i>{config.phoneNumber}</i> with any questions.</span> */}
       </div>
       
       <div className="footer-content">

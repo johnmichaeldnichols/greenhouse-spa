@@ -6,6 +6,7 @@ import img1 from "../images/about/img1.jpg";
 import img2 from "../images/about/img2.jpg";
 import img3 from "../images/about/img3.jpg";
 import img4 from "../images/about/img4.jpg";
+import BookButton from '../components/bookbutton';
 
 const About = () => {
 
@@ -24,8 +25,9 @@ const About = () => {
             <Gallery images={images}/>
             <div id='content'>
                 <h2>{info.name}</h2>
-                <p><i>{info.address}</i></p>
-                <p>{info.description}</p>
+                <p id='address'><i>{info.address}</i></p>
+                <div className='book-button'><BookButton/></div>
+                {/* <p>{info.description}</p> */}
                 <h2>About</h2>
                 <p>{info.about}</p>
                 <h2>Mission</h2>

@@ -4,12 +4,22 @@
     align-items: center;
 }
 
+.book-button {
+    margin: 2rem 0;
+}
+
+#address {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
 #content  {
+    margin: 0;
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--dark-green);
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin: 2rem 0;
 }
