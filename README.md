@@ -73,3 +73,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <a href="https://www.freepik.com/free-vector/geometric-frame-with-leaves-vector_3463058.htm#query=floral&position=27&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
 
 Image by <a href="https://pixabay.com/users/nosheep-204378/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1885546">Charles Thompson</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1885546">Pixabay</a>
+
+
+<!-- 
+
+Project Name
+A brief description of your project.
+
+Table of Contents
+Installation
+Usage
+Features
+Contributing
+License
+Installation
+Clone the repository.
+
+shell
+Copy code
+git clone <repository-url>
+Navigate to the project directory.
+
+shell
+Copy code
+cd project-directory
+Install the dependencies.
+
+shell
+Copy code
+npm install
+Usage
+Start the development server.
+
+shell
+Copy code
+npm run dev
+Open your browser and visit http://localhost:3000 to view the app.
+
+Features
+List the main features of your app here. -->

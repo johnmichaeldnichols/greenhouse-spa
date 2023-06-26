@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Gallery from '../components/gallery';
 import './about.css';
 import config from '../data/config';
-import img1 from "../images/about/img1.jpg";
-import img2 from "../images/about/img2.jpg";
-import img3 from "../images/about/img3.jpg";
-import img4 from "../images/about/img4.jpg";
+import img1 from "../assets/greenhousespa-gallery/img1.jpg";
+import img2 from "../assets/greenhousespa-gallery/img2.jpg";
+import img3 from "../assets/greenhousespa-gallery/img3.jpg";
+import img4 from "../assets/greenhousespa-gallery/img4.jpg";
 import BookButton from '../components/bookbutton';
 
 const About = () => {

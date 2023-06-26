@@ -1,5 +1,5 @@
 import React from 'react';
-import backSplashImage from '../images/store-wrapper.jpg';
+import backSplashImage from '../assets/images/store-wrapper.jpg';
 import './store.css';
  
 const Store = () => {

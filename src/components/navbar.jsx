@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./navbar.css";
 import { Squash as Hamburger } from 'hamburger-react';
-import logo from "../images/logo/green-house-spa-high-resolution-logo-black-on-transparent-background-1.png";
+import logo from "../assets/logo/green-house-spa-high-resolution-logo-black-on-transparent-background-1.png";
 
 function Navbar() {
 
