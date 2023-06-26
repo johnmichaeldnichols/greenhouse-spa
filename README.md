@@ -16,5 +16,6 @@ A website for Green House Spa Salong of WR, GA.
 
 ### Start the development server.
 `npm run dev`
+
 Open your browser and visit http://localhost:3000 to view the app.
 
