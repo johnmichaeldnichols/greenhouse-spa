@@ -21,13 +21,11 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    steps:
+    steps:    
       - name: Checkout code 
         uses: actions/checkout@v3
+        
       - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GREENHOUSESPA_9B028 }}'
-          channelId: live
-          projectId: greenhousespa-9b028
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: npx firebase deploy --project greenhousespa-9b028    
