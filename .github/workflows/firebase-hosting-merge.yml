@@ -10,11 +10,13 @@ jobs:
       - uses: actions/checkout@v3
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GREENHOUSESPA_9B028 }}'
           channelId: live
-          projectId: greenhousespa-9b028
+          projectId: greenhousespa-9b028          
           
 # name: Deploy to Firebase Hosting on merge
 
