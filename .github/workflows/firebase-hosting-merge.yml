@@ -43,7 +43,7 @@ jobs:
 #       - name: Checkout code 
 #         uses: actions/checkout@v3
         
-      - name: Deploy to Firebase Hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: npx firebase deploy --project greenhousespa-9b028    
+#       - name: Deploy to Firebase Hosting
+#         env:
+#           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+#         run: npx firebase deploy --project greenhousespa-9b028    
