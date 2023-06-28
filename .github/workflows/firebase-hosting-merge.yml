@@ -1,31 +1,50 @@
 name: Deploy to Firebase Hosting on merge
-
 'on':
   push:
     branches:
       - main
-
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - run: npm ci && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GREENHOUSESPA_9B028 }}'
+          channelId: live
+          projectId: greenhousespa-9b028
+          
+# name: Deploy to Firebase Hosting on merge
 
-      - name: Install dependencies
-        run: npm ci
+# 'on':
+#   push:
+#     branches:
+#       - main
 
-      - name: Build
-        run: npm run build
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
+
+#       - name: Install dependencies
+#         run: npm ci
+
+#       - name: Build
+#         run: npm run build
         
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:    
-      - name: Checkout code 
-        uses: actions/checkout@v3
+#   deploy:
+#     needs: build
+#     runs-on: ubuntu-latest
+#     steps:    
+#       - name: Checkout code 
+#         uses: actions/checkout@v3
         
-      - name: Deploy to Firebase Hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: npx firebase deploy --project greenhousespa-9b028    
+#       - name: Deploy to Firebase Hosting
+#         env:
+#           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+#         run: npx firebase deploy --project greenhousespa-9b028    
+          
